@@ -1,0 +1,84 @@
+.follow, .share {
+  display: inline-block;
+  cursor: default;
+  padding: 0;
+  margin: 0 .5em;
+  position: relative;
+  text-align: center;
+}
+.follow:hover .label, .share:hover .label {
+  opacity: 0;
+  transition: opacity .5s .125s ease-out;
+}
+.follow:hover .icon, .share:hover .icon {
+  border-radius: 1em;
+  margin: 0 0;
+}
+
+.icon, .label {
+  line-height: 2rem;
+}
+
+.label {
+  display: inline-block;
+  border-radius: 1rem;
+  position: absolute;
+  /* font-size: .618em;
+  font-weight: 900;
+  letter-spacing: .0816em; */
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: opacity .5s .75s ease-out;
+}
+
+.icon {
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2em;
+  margin: 0 -.5em;
+  transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+  width: 2em;
+}
+.icon.first {
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  margin-left: 0;
+}
+.icon.last {
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-right: 0;
+}
+.icon:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  border: 0;
+  background-color: #5F4B8B;
+  color: #EEE;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: .0816em;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color .25s ease-out, -webkit-transform .5s ease-out;
+  transition: background-color .25s ease-out, transform .5s ease-out;
+  transition: background-color .25s ease-out, transform .5s ease-out, -webkit-transform .5s ease-out;
+}
+button:hover {
+  background-color: #ebc247;
+  color: #111;
+}
